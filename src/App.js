@@ -41,12 +41,12 @@ const pages = [
         <button
                 style={{width: 400, height: 50}} onClick={() => {
             axios.post('/api/sendEncryptedData', {eData: token}).then((res) => {
-                    // alert(JSON.stringify(res.data));
+                     alert(JSON.stringify(res.data.data));
                     // console.log(res.data);
                 }
             ).catch((err) => alert(err.message));
         }}>
-            <h3>Send Hash A To Server To Decrypt</h3>
+            <h3>Send Hash To Server To Decrypt</h3>
         </button>
         <button
                 style={{width: 400, height: 50}} onClick={() => {
